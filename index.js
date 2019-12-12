@@ -5,14 +5,14 @@ const childProcess = require('child_process');
 const getExistingLinuxCommand = () => {
 	// See: https://askubuntu.com/questions/184728/how-do-i-lock-the-screen-from-a-terminal
 	const commands = [{
-		name: 'xdg-screensaver',
-		arg: 'lock'
+		name: 'cinnamon-screensaver-command',
+		arg: '--lock'
 	}, {
 		name: 'gnome-screensaver-command',
 		arg: '--lock'
 	}, {
-		name: 'cinnamon-screensaver-command',
-		arg: '--lock'
+		name: 'xdg-screensaver',
+		arg: 'lock'
 	}, {
 		name: 'dm-tool',
 		arg: 'lock'
